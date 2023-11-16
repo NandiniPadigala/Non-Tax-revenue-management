@@ -11,11 +11,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change the font-family */
+    margin: 0;
+    padding: 0;
+     /* Add gradient background */
+    background: linear-gradient(to right, #F39C12, #F4F6F7 , #27AE60 ); /* Use the same gradient for the navbar background */
+    color: white;
         }
+        
         .btn:hover{
             background: #071926;
          color: white;
         }
+
        .btn:hover .circle{
        background-color: white;
           
@@ -43,6 +51,7 @@
             margin-left: 6px;
         }
         .navbar {
+           
             background-color: #050e14; /* Blue background color */
             color: white; /* White font color */
             position: fixed;
@@ -52,8 +61,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 70px; /* Increase the height of the navbar */
+            height: 80px; /* Increase the height of the navbar */
             padding: 10px 20px;
+            
         }
 
         .menu-icon {
@@ -65,6 +75,7 @@
             margin-left: 25px;
             margin-top: 0px;
             height: 60px; /* Set the width of the icon image */
+            transition: width 0.5s ease-in-out, height 0.5s ease-in-out, margin 0.5s ease-in-out;
         }
 
         .navbar-logo {
@@ -81,13 +92,13 @@
             position: relative;
             display: inline-block;
             padding: 30px;
-font-size: 18px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           
         }
-.top{
-    margin-top: 13px;
-}
+        .top{
+            margin-top: 13px;
+        }
         .topic-name {
             cursor: pointer;
 
@@ -95,6 +106,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         .topic-name:hover {
             box-shadow: 0 0 10px WHITE;
         }
+        
         .dropdown-content {
             display: none;
             position: absolute;
@@ -104,6 +116,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: white; /* White font color */
             font-family:sans-serif;
             font-size: 17px;
+            transition: display 0.5s ease-in;
         }
         .contents:hover{
             background-color:white ;
@@ -132,18 +145,22 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
               display: block;
               margin: 0 auto; /* Center the image horizontally */
         }
-.about{
-    padding:70px;
-    color:#050e14;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+        .about{
+            padding:70px;
+            color:#050e14;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .image1:hover{
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
+    
     <div class="navbar">
         <div class="menu-icon">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrATKgX0NZyNTc5BO6qyuXxXX-rE37Mx9wHA&usqp=CAU" alt="logo" height="500">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrATKgX0NZyNTc5BO6qyuXxXX-rE37Mx9wHA&usqp=CAU" alt="logo" style="height: 100px;">
         </div>
         <div class="navbar-logo"></div>
         <div class="topics">
@@ -182,7 +199,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     <div class="content">
         <div class="image">
-       <img src="https://img.freepik.com/free-vector/saving-money-concept-background_23-2148146508.jpg?size=626&ext=jpg&ga=GA1.1.1548777004.1684316087&semt=ais" height="500" width="800" padding="200"></div>
+       <img src="https://img.freepik.com/free-vector/startup-managers-presenting-analyzing-sales-growth-chart-group-workers-with-heap-cash-rocket-bar-diagrams-with-arrow-heap-money_74855-14166.jpg?size=626&ext=jpg&ga=GA1.1.1548777004.1684316087&semt=sph" height="550" width="900" padding="200" style="border-radius: 50%;margin-top:50px;box-shadow: 0 0 10px WHITE;" class="image1"></div>
        <div class="about">
         <h2 style="color: rgb(14, 14, 109); padding-right: 740px;">
             ABOUT:
