@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    html, body { height: 100%; }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+
+      background: linear-gradient(
+        135deg,
+        rgba(#acae3d, .9),
+        rgba(#872541, .9)
+      ) 
+      font-family: 'Roboto', helvetica, arial, sans-serif;
+      font-size: 1.5em;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%; width: 100%;
+      }
+    }
+
+    .login-form {
+      width: 100%;
+      padding: 2em;
+      position: relative;
+      background: rgba(black, .15);
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -2px; left: 0;
+        height: 2px; width: 100%;
+        background: linear-gradient(
+          to right,
+          #000,
+          #000
+        );    
+      }
+
+      @media screen and (min-width: 600px) {
+        width: 50vw;
+        max-width: 15em;
+      }
+    }
+
+    .flex-row {
+      display: flex;
+      margin-bottom: 1em;
+    }
+
+    .lf--label {
+      width: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eba146;
+      cursor: pointer;
+    }
+
+    .lf--input {
+      flex: 1;
+      padding: 1em;
+      border: 0;
+      color: #000;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+        transition: transform .15s ease;
+        transform: scale(1.1);
+      }
+    }
+
+    .lf--submit {
+      display: block;
+      padding: 1em;
+      width: 100%;
+      background: #000;
+      border: 0;
+      color: #fff;
+      cursor: pointer;
+      font-size: .75em;
+      font-weight: 600;
+      text-shadow: 0 1px 0 rgba(black, .2);
+
+      &:focus {
+        outline: none;
+        transition: transform .15s ease;
+        transform: scale(1.1);
+      }
+    }
+
+    .lf--forgot {
+      margin-top: 1em;
+      color: #000;
+      font-size: .65em;
+      text-align: center;
+      position: relative;
+    }
+
+    ::placeholder { color: #000; }
+  </style>
+</head>
+<body>
+  <h1>Non-tax Revenue Scheme</h1>
+  <form class='login-form'>
+    <div class="flex-row">
+      <label class="lf--label" for="username">
+        <svg x="0px" y="0px" width="12px" height="13px">
+          <!-- SVG code for username icon -->
+        </svg>
+      </label>
+      <input id="username" class='lf--input' placeholder='Username' type='text'>
+    </div>
+    <div class="flex-row">
+      <label class="lf--label" for="password">
+        <svg x="0px" y="0px" width="15px" height="5px">
+          <!-- SVG code for password icon -->
+        </svg>
+      </label>
+      <input id="password" class='lf--input' placeholder='Password' type='password'>
+    </div>
+    <input class='lf--submit' type='submit' value='LOGIN'>
+  </form>
+  <a class='lf--forgot' href='#'>Forgot password?</a>
+</body>
+</html>
